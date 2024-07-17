@@ -28,5 +28,14 @@ public class OrdenarArregloEnOrden {
         for(int i = 0; i < a.length; i++){
             System.out.println("Indice: " + i + ", Valor: " + a[i]);
         }
+
+        //Crear una copia de un arreglo menos el ultimo elemento
+        int[] b = new int[a.length - 1];
+        System.arraycopy(a, 0, b, 0, b.length);
+
+        System.out.println("Copia de arreglo");
+        for(int i = 0; i < b.length; i++){
+            System.out.println(i + " => " + b[i]);
+        }
     }
 }
