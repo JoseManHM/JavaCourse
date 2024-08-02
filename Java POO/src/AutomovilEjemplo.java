@@ -4,6 +4,7 @@ public class AutomovilEjemplo {
     private String color;
     private double cilindrada;
     private int capacidadTanque = 30;
+    private static String motor = "RX-189";
 
     public AutomovilEjemplo(){
 
@@ -25,6 +26,7 @@ public class AutomovilEjemplo {
         sb.append("\nauto.modelo = " + this.modelo);
         sb.append("\nauto.color = " + this.color);
         sb.append("\nauto.cilindrada = " + this.cilindrada);
+        sb.append("\nauto.motor = " + AutomovilEjemplo.motor);
         return sb.toString();
     }
 
@@ -80,6 +82,12 @@ public class AutomovilEjemplo {
 
     public void setCilindrada(double cilindrada){
         this.cilindrada = cilindrada;
+    }
+    public static String getMotor(){
+        return motor;
+    }
+    public static void setMotor(String motor){
+        AutomovilEjemplo.motor = motor;
     }
 
     @Override

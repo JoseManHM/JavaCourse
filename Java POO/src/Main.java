@@ -9,7 +9,16 @@ public class Main {
         System.out.println("Kilometros por litro: " + auto.calcularConsumo(40, 0.7f));
         System.out.println("Kilometros por litro: " + auto.calcularConsumo(40, 70));
 
+        //Cambiandole el valor al atributo estatica
+        AutomovilEjemplo.setMotor("RX-190");
+
         String objString = auto.toString();
         System.out.println("objString = " + objString);
+
+        AutomovilEjemplo nissan = new AutomovilEjemplo("Nissan", "Tsuru", "Gris", 100, 25);
+        System.out.println(nissan.verDetalle());
+
+        AutomovilEjemplo chevrolet = new AutomovilEjemplo("Chevrolet", "Chevy", "Negro", 120, 20);
+        System.out.println(chevrolet.verDetalle());
     }
 }
